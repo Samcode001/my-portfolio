@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Space+Grotesk:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Space+Grotesk:wght@500;700&display=swap");
 
 /*  Global Styles   */
 :root {
@@ -36,24 +36,24 @@
   align-items: center;
 }
 
-.preloader-content{
+.preloader-content {
   animation: grow 800ms ease-in;
 }
 
-.greet{
+.greet {
   color: var(--text2);
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
+  height: 50px;
+  overflow: hidden;
   margin-left: 1rem;
 }
 
 .animation > div > div {
-  height:2.81rem;
+  height: 2.81rem;
   margin-bottom: 2.81rem;
-  display:inline-block;
+  display: inline-block;
   /* outline: 2px solid; */
 }
 
@@ -63,29 +63,43 @@
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5rem;}
-  30% {margin-top: -5rem;}
-  70% {margin-top: -5rem;}
-  80% {margin-top: -5rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5rem;
+  }
+  30% {
+    margin-top: -5rem;
+  }
+  70% {
+    margin-top: -5rem;
+  }
+  80% {
+    margin-top: -5rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
-@keyframes grow{
-  0%{
-    transform:scaleY(0);
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
   }
-  50%{
-    transform:scaleY(1.1);
+  50% {
+    transform: scaleY(1.1);
   }
-  100%{
-    transform:scaleY(1);
-
+  100% {
+    transform: scaleY(1);
   }
 }
-
 
 /* -------------- general styling ---------------- */
 
@@ -109,19 +123,18 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: var(--bg-body);
   color: var(--text1);
   font-size: var(--fs-18);
   line-height: 1.56;
   overflow-x: hidden;
 }
-
 
 h1,
 h2,
@@ -143,7 +156,6 @@ h3 {
   line-height: 1.1;
 }
 
-
 p {
   line-height: 1.5;
   font-size: 1rem;
@@ -161,7 +173,11 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text1);
-  background-image: linear-gradient(to right, var(--accent) 75%, var(--accent) 75%);
+  background-image: linear-gradient(
+    to right,
+    var(--accent) 75%,
+    var(--accent) 75%
+  );
   background-position: 0 2.1em;
   background-repeat: repeat-x;
   background-size: 8px 2px;
@@ -189,16 +205,14 @@ svg {
   margin-inline: auto;
 }
 
-
 /* 600px for tablet screen  */
-@media (min-width:37.5em) {
+@media (min-width: 37.5em) {
   .wrapper {
     width: calc(100% -3.75rem);
   }
 }
 
 /* ------------ Utility --------------------- */
-
 
 .visually-hidden {
   position: absolute;
@@ -221,8 +235,6 @@ svg {
   color: var(--accent);
   transition: color var(--transition);
 }
-
-
 
 /* ------------- header --------------- */
 
@@ -249,7 +261,7 @@ svg {
   /* flex : grow shrink basis; */
   flex: 1 0 100%;
   transition: color var(--transition);
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
@@ -265,7 +277,7 @@ a {
 }
 
 .icon {
-  fill: #FFF;
+  fill: #fff;
   transition: fill var(--transition);
   /* outline: 2px solid; */
 }
@@ -274,7 +286,7 @@ a {
   fill: var(--accent);
 }
 
-@media (min-width:37.5em) {
+@media (min-width: 37.5em) {
   .header {
     margin-block-start: 30px;
     /* margin-block-end: 90px; */
@@ -295,7 +307,7 @@ a {
   }
 }
 
-@media (min-width:62.5em) {
+@media (min-width: 62.5em) {
   .header {
     margin-block-start: 40px;
     margin-block-end: 127px;
@@ -346,12 +358,16 @@ a {
   margin-block-end: 24px;
 }
 
-.hero__headline>br {
+.hero__headline > br {
   display: none;
 }
 
-h1>span {
-  background-image: linear-gradient(to right, var(--accent) 75%, var(--accent) 75%);
+h1 > span {
+  background-image: linear-gradient(
+    to right,
+    var(--accent) 75%,
+    var(--accent) 75%
+  );
   background-position: 0 1.18em;
   background-repeat: repeat-x;
   background-size: 8px 4px;
@@ -360,7 +376,6 @@ h1>span {
 .hero__description {
   margin-block-end: 24px;
 }
-
 
 .goofer {
   position: absolute;
@@ -399,7 +414,7 @@ h1>span {
   aspect-ratio: 1;
 }
 
-@media (min-width:62.5em) {
+@media (min-width: 62.5em) {
   .goofer {
     display: block;
   }
@@ -411,11 +426,9 @@ h1>span {
   .right-eye {
     display: block;
   }
-
 }
 
-@media (min-width:37.5em) {
-
+@media (min-width: 37.5em) {
   .hero {
     margin-block-start: -62px;
   }
@@ -471,7 +484,6 @@ h1>span {
     z-index: 1;
   }
 
-
   .hero__headline {
     margin-block-end: 60px;
   }
@@ -481,13 +493,12 @@ h1>span {
     margin-block-end: 34px;
   }
 
-  .hero__headline>br {
+  .hero__headline > br {
     display: inline-block;
   }
 }
 
-@media (min-width:62.5em) {
-
+@media (min-width: 62.5em) {
   .hero {
     margin-block-start: 0;
   }
@@ -534,7 +545,7 @@ h1>span {
     width: 38ch;
   }
 
-  .hero__headline>br {
+  .hero__headline > br {
     display: none;
   }
 }
@@ -554,7 +565,6 @@ h1>span {
 
 .skills__item {
   text-align: center;
-
 }
 
 .skills__description {
@@ -575,7 +585,7 @@ h1>span {
   translate: 0 50%;
 }
 
-@media (min-width:37.5em) {
+@media (min-width: 37.5em) {
   .skills__wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 52px 24px;
@@ -592,7 +602,7 @@ h1>span {
   }
 }
 
-@media (min-width:62.5em) {
+@media (min-width: 62.5em) {
   .skills__wrapper {
     padding: block start 72px;
     grid-template-columns: repeat(3, 1fr);
@@ -607,7 +617,6 @@ h1>span {
 }
 
 /* ------------------- Projects ------------------- */
-
 
 .projects__wrapper {
   padding-block: 80px;
@@ -630,7 +639,6 @@ h1>span {
 .projects__contact {
   grid-column: 1 / span 2;
 }
-
 
 .projects__item {
   grid-column: 1 / span 2;
@@ -668,12 +676,7 @@ h1>span {
   gap: 20px;
 }
 
-
-
-
-
-@media (min-width:37.5em) {
-
+@media (min-width: 37.5em) {
   .projects__grid {
     /* row  column */
     gap: 60px 24px;
@@ -713,8 +716,7 @@ h1>span {
   }
 }
 
-@media (min-width:62.5em) {
-
+@media (min-width: 62.5em) {
   .projects__grid {
     /* row column  */
     gap: 70px 30px;
@@ -770,7 +772,7 @@ h1>span {
     transition: opacity 400ms ease-in-out;
   }
 
-  .projects__links:hover~.projects__picture::after {
+  .projects__links:hover ~ .projects__picture::after {
     opacity: 1;
   }
 
@@ -793,7 +795,6 @@ h1>span {
   margin-block-end: 1.25rem;
 }
 
-
 .contact__control {
   position: relative;
   margin-block-end: 16px;
@@ -812,7 +813,7 @@ h1>span {
   line-height: 1.625;
 }
 
-.contact__control>*::placeholder {
+.contact__control > *::placeholder {
   color: var(--text1);
   opacity: 0.5;
   text-transform: uppercase;
@@ -828,7 +829,6 @@ h1>span {
 input:invalid,
 textarea:invalid {
   outline-color: var(--invalid);
-
 }
 
 .contact__control textarea {
@@ -855,12 +855,12 @@ textarea:invalid {
   translate: -50% -50%;
 }
 
-.contact input:focus-visible:invalid~.contact__invalid-icon,
-.contact textarea:focus-visible:invalid~.contact__invalid-icon {
+.contact input:focus-visible:invalid ~ .contact__invalid-icon,
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
   display: inline-block;
 }
 
-.contact textarea:focus-visible:invalid~.contact__invalid-icon {
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
   top: 1rem;
   right: 1.5rem;
   translate: none;
@@ -873,14 +873,14 @@ textarea:invalid {
   translate: -70%;
 }
 
-@media (min-width:37.5em) {
+@media (min-width: 37.5em) {
   .contact__rings {
     bottom: 47px;
     translate: -75%;
   }
 }
 
-@media (min-width:62.5em) {
+@media (min-width: 62.5em) {
   .contact__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 27.8rem);
@@ -897,7 +897,7 @@ textarea:invalid {
 }
 
 /* 999.98px */
-@media (max-width:62.49875em) {
+@media (max-width: 62.49875em) {
   .contact__wrapper {
     max-width: 27.8rem;
   }
@@ -914,20 +914,19 @@ footer {
   padding-block: 40px 60px;
 }
 
-@media (min-width:37.5em) {
+@media (min-width: 37.5em) {
   footer {
     padding-block: 30px 40px;
   }
 }
 
-@media (min-width:62.5em) {
+@media (min-width: 62.5em) {
   footer {
     padding-block: 47px 92px;
   }
 }
 
 /* ----------------------- animation for Intersection ----------------------- */
-
 
 .hidden {
   opacity: 0;
@@ -949,8 +948,6 @@ footer {
   transform: translateX(0%);
 }
 
-
-
 .social-icon:nth-child(2) {
   transition-delay: 800ms;
 }
@@ -966,4 +963,3 @@ footer {
 .social-icon:nth-child(5) {
   transition-delay: 1500ms;
 }
-
